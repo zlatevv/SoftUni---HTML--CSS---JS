@@ -1,0 +1,21 @@
+p.highlighted {
+    color: aqua;
+}
+p.Special{
+    background-color: darkgoldenrod;
+}
+ul > .Important-1{
+    color: cyan;
+}
+ul > .Important-3{
+    color: crimson;
+}
+a.this{
+    color: blue;
+}
+a.SoftUni{
+    color: rgb(255, 201, 54);
+}
+.multiple.classes{
+    color: darkblue;
+}

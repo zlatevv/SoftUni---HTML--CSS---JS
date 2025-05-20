@@ -1,0 +1,21 @@
+h1 {
+    color: crimson;
+}
+p {
+    font-size: large;
+}
+.highlight{
+    background-color: blueviolet;
+}
+#main-title{
+    color: cornflowerblue;
+}
+#special-paragraph{
+    font-style: italic;
+}
+div{
+    background-color: aquamarine;
+}
+li{
+    color: chocolate;
+}
