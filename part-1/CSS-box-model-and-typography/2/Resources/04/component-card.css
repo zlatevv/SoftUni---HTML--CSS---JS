@@ -1,0 +1,43 @@
+html{
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+div {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 22%;
+    align-content: center;
+    border: none;
+    border-radius: 1%;
+    background-color: white;
+    margin: 0 auto;
+    align-items: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+  padding: 0 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+p {
+  padding: 0 2em;
+  margin-bottom: 0.5em;
+}
+.discover{
+    margin-top: 1.5em;
+}
+a {
+  display: block;
+  padding: 0 2em 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

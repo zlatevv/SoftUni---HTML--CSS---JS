@@ -27,16 +27,16 @@ blockquote {
       font-style: italic;
     }
 
-    .quote-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .author {
-      text-align: right;
-      margin-top: 20px;
-      font-style: italic;
-    }
+.author {
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+}
 html{
     font-size: 16px;
     line-height: 1.5;

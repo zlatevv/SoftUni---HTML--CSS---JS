@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+div{
+    border: 5px dash black;;
+    margin: 2em;
+    height: auto;
+}
+.margin{
+    background: lightcoral;
+    padding: 20px;
+}
+.border{
+    background: lightpink;
+    padding: 20px;
+}
+.padding{
+    background: lightgreen;
+    padding: 20px;
+}
+.content {
+    background: lightblue;
+    padding: 10px;
+    text-align: center;
+}
