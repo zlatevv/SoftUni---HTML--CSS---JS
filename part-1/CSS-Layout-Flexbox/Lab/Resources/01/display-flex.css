@@ -1,0 +1,11 @@
+.container{
+    border: 2px solid blue;
+    display: flex;
+    width: 400px;
+    padding: 1em;
+}
+.item{
+    background: rgb(170, 161, 161);
+    border: 2px solid black;
+    padding: 20px;
+}

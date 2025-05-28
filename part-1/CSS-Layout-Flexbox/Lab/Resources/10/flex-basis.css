@@ -1,0 +1,28 @@
+.flex-container{
+    border: 2px solid blue;
+    display: flex;
+    width: 400px;
+    padding: 1em;
+}
+.flex-item{
+    background: rgb(170, 161, 161);
+    border: 2px solid black;
+    padding: 20px;
+}
+.first .flex-item {
+    width: 900px;
+    flex-basis: 5em;
+}
+.second .flex-item{
+    flex-basis: 5em;
+    flex-shrink: 0;
+    max-width: 5em;
+}
+.third{
+    width: 800px;
+}
+.third .flex-item{
+    flex-basis: 5em;
+    flex-grow: 1;
+    min-width: 5em;
+}

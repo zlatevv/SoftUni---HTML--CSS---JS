@@ -1,0 +1,27 @@
+.flex-container{
+    margin: 0 auto;
+    border: 2px solid blue;
+    display: flex;
+    width: 400px;
+    padding: 1em;
+}
+.item{
+    background: rgb(170, 161, 161);
+    border: 2px solid black;
+    padding: 20px;
+}
+.flex-container.row {
+    flex-direction: row;
+}
+.flex-container.column {
+    flex-direction: column;
+}
+.flex-container.row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-container.column-reverse {
+    flex-direction: column-reverse;
+}
+h1, h2 {
+    text-align: center;
+}

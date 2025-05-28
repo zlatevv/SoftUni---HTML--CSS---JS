@@ -1,0 +1,22 @@
+.flex-container{
+    border: 2px solid blue;
+    display: flex;
+    width: 300px;
+    padding: 1em;
+    align-items: flex-start;
+}
+.flex-item{
+    background: rgb(170, 161, 161);
+    border: 2px solid black;
+    padding: 20px;
+    flex-basis: 300px;
+}
+fault-shrink .flex-item{
+    flex-shrink: 1;
+}
+.no-shrink .flex-item{
+    flex-shrink: 0;
+}
+.second-child .flex-item:nth-child(2) {
+    flex-shrink: 1;
+}
