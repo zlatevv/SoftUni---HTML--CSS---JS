@@ -1,0 +1,54 @@
+* {
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+body > * {
+    width: 100%;
+}
+.container {
+    background-color: lightgray;
+    border-radius: 0.3em;
+    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+    padding: 1.5em 1.2em;
+}
+.container > * {
+    background-color: white;
+    border-radius: 0.3em;
+    border: 1px solid rgb(175, 175, 175);
+}
+a {
+    color: orange;
+}
+.container > div {
+    flex: 1 1 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container > div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: orange;
+}
+.container > div:hover {
+    background-color: #e0e0e0;
+}
+
+.container > div a:hover {
+    color: darkorange;
+}

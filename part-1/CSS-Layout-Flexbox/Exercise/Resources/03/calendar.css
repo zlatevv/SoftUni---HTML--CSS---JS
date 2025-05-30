@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: lightgray;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body > * {
+    width: 100%;
+}
+
+.section {
+    background-color: white;
+    border-radius: 1%;
+    margin: 0 auto;
+    max-width: 120ch;
+    padding: 1.5em 1.2em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.calendar{
+    display: flex;
+    gap: 0;
+}
+.calendar > *{
+    border: 1px solid lightgray;
+    flex: 1 1 auto;
+}
+.calendar .main{
+    flex-basis: 60ch;
+}
+.calendar .aside{
+    flex-basis: 30ch;
+    display: flex;
+    flex-direction: column;
+}
+.calendar .aside > *{
+    flex-grow: 1;
+}
+.calendar .aside div{
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+.calendar .week {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.calendar .week header{
+    text-align: center;
+    display: block;
+    border: 1px solid lightgray;
+    padding: 1em;
+}
+.calendar .week header h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+.calendar .week > ul{
+    display: flex;
+}
+.calendar .week > ul li{
+    display: block;
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid lightgray;
+}
