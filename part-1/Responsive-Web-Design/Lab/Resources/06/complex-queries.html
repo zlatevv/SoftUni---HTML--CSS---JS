@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Media Queries</title>
+</head>
+<body>
+    <h1>Complex Media Queries</h1>
+    <p>Reference: 
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#creating_complex_media_queries">
+            MDN - Creating Complex Media Queries
+        </a>
+    </p>
+
+    <h2>Combining multiple types or features</h2>
+    <p>
+        The <code>and</code> keyword combines multiple media features. This example restricts styles to devices in landscape orientation 
+        and a minimum width of 30em.
+    </p>
+<pre>
+@media (min-width: 30em) and (orientation: landscape) {
+    body::before {
+        display: block;
+        content: 'The viewport width is larger than 30em and the orientation is landscape.';
+    }
+}
+</pre>
+
+    <h2>Testing for multiple queries</h2>
+    <p>
+        A comma <code>,</code> separates multiple queries. Styles apply if any of the queries match.
+    </p>
+<pre>
+@media (min-height: 680px), screen and (orientation: portrait) {
+    body::before {
+        display: block;
+        content: 'The viewport height is larger than 680px or the media type is screen and the orientation is portrait.';
+    }
+}
+</pre>
+
+    <h2>Inverting a query's meaning</h2>
+    <p>
+        The <code>not</code> keyword negates a single query. This example targets viewports <strong>not</strong> wider than 600px.
+    </p>
+<pre>
+@media not (min-width: 600px) {
+    body::before {
+        display: block;
+        content: 'The viewport is NOT larger than 600px';
+    }
+}
+</pre>
+</body>
+</html>

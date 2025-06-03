@@ -1,0 +1,71 @@
+@media all{
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        padding: 2em;
+        font: 14px/1.5 Lato, sans-serif;
+    }    
+
+    p {
+        padding-bottom: 1.5em;
+    }
+    pre {
+        background-color: lightgray;
+        border-radius: 0.3em;
+        padding: 1em;
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    body::before {
+        display: block;
+        content: 'The viewport width is larger than 800px and smaller than 1200px';
+    }
+}
+@media not screen and (max-width: 1200px) {
+    body::before {
+        display: block;
+        content: 'The viewport width is larger than 1200px';
+        background-color: orange;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media only screen and (min-width: 800px) {
+    body::before {
+        display: block;
+        content: 'The device is using a screen and the viewport width is larger than 800px';
+        background-color: #369;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media (max-width: 600px), (orientation: landscape) {
+    body::before {
+        display: block;
+        content: 'Either the viewport is ≤600px wide or the device is in landscape orientation';
+        background-color: orange;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media (max-width: 600px) or (orientation: landscape) {
+    body::before {
+        display: block;
+        content: 'Viewport is ≤600px OR device is in landscape';
+        background-color: #369;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}

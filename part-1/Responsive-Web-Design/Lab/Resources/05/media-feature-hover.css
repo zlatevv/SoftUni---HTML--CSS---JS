@@ -1,0 +1,43 @@
+@media all{
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        padding: 2em;
+        font: 14px/1.5 Lato, sans-serif;
+    }    
+
+    p {
+        padding-bottom: 1.5em;
+    }
+    pre {
+        background-color: lightgray;
+        border-radius: 0.3em;
+        padding: 1em;
+    }
+}
+@media (hover: none) {
+    body::before {
+        display: block;
+        content: 'The device does NOT support hover';
+        background-color: orange;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media (hover: hover) {
+    body::before {
+        display: block;
+        content: 'The device does support hover';
+        background-color: #369;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}

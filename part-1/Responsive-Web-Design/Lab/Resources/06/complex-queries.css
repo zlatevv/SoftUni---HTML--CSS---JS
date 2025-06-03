@@ -1,0 +1,54 @@
+@media all{
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        padding: 2em;
+        font: 14px/1.5 Lato, sans-serif;
+    }    
+
+    p {
+        padding-bottom: 1.5em;
+    }
+    pre {
+        background-color: lightgray;
+        border-radius: 0.3em;
+        padding: 1em;
+    }
+}
+@media (min-width: 30em) and (orientation: landscape) {
+    body::before {
+        display: block;
+        content: 'The viewport width is larger than 30em and the orientation is landscape.';
+        background-color: red;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media (min-height: 680px), screen and (orientation: portrait) {
+    body::before {
+        display: block;
+        content: 'The viewport height is larger than 680px or the media type is screen and the orientation is portrait.';
+        background-color: #369;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
+@media not (min-width: 600px) {
+    body::before {
+        display: block;
+        content: 'The viewport is NOT larger than 600px';
+        background-color: orange;
+        color: white;
+        padding: 1.5em;
+        border-radius: 0.3em;
+        margin-bottom: 1.5em;
+    }
+}
