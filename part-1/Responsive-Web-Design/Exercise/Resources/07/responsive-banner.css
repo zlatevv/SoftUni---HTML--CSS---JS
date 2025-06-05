@@ -1,0 +1,101 @@
+@media all{
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #e7e7e7;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body > * {
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        border-radius: 0.3em;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        background: white;
+        max-width: 1200px;         
+        width: 100%;              
+        padding: 1.5em;           
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        gap: 1em;
+        margin-top: 2em;
+        line-height: 1.5;
+        color: rgb(131, 131, 131);
+    }
+    h2 {
+        color: rgb(194, 193, 193);
+    }
+    h1{
+        color: rgb(58, 58, 58);
+    }
+    .left-content {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .button-row {
+        display: flex;
+        gap: 1em;
+        margin-top: 1em;
+    }
+    .chat{
+        background-color: rgb(104, 11, 190);
+        color: white;
+        border-radius: 0.3em;
+        padding: 1.1em 1.4em;
+    }
+    .chat:hover{
+        background-color: rgb(120, 87, 148);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .learn-more{
+        background-color: lightgray;
+        color: black;
+        border-radius: 0.3em;
+        padding: 1.1em 1.4em;
+    }
+    .learn-more:hover{
+        background-color: rgb(236, 236, 236);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    .right-rectangle {
+        flex: 1;
+        min-width: 400px;
+        background-color: rgb(236, 236, 236);
+        border: 2px solid lightgray;
+        border-radius: 0.3em;
+        max-height: 300px;
+        margin: 1.3em ;
+    }
+}
+@media (max-width:600px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-rectangle {
+        flex: 1;
+        width: 100%;
+        margin: 1.3em auto;
+    }
+    .left-content {
+        width: 100%;
+    }
+    .button-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}

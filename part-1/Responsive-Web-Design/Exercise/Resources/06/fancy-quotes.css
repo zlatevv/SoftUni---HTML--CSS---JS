@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eee;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+  flex: 1 1 300px;
+}
+
+.card-content {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  color: #777;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 5px #fff, 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-content {
+    padding: 0;
+  }
+
+  .card-image {
+    margin-top: 1rem;
+  }
+}
