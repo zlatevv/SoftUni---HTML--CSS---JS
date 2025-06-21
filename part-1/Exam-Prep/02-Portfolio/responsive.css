@@ -1,0 +1,46 @@
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .checkbtn {
+        display: block;
+        order: 2;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        z-index: 1000000;
+    }
+
+    nav ul li {
+        display: block;
+    }
+    .site-header > i {
+        position: relative;
+        left: 45%;
+    }
+    .about{
+        display: flex;
+        .about-text {
+            max-width: 24ch;
+        }
+        .about-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 6em;
+        }
+    }
+    .gallery {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
