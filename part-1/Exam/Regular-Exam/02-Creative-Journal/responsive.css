@@ -1,0 +1,77 @@
+@media (width <= 600px){
+    .home-navbar {
+        gap: 1em;
+        justify-content: center;
+
+        .home-cta-container {
+            padding-left: 0.2em;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+    .home-navbar-container{
+        position: relative;
+    }
+    .home-hero {
+        flex-direction: column;
+        gap: 1em;
+
+        .home-image1 {
+            width: 100%;
+            height: auto;
+            order: -1;
+        }
+        .home-hero-text-container {
+            width: 100%;
+            margin-left: 0;
+
+            .home-cta-btn2 {
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
+    .home-features {
+        height: auto;
+        .home-heading-container {
+            width: 100%;
+
+            .home-text04, .home-text05, .home-text06, .home-text07 {
+                max-width: 50ch;
+            }
+        }
+        .home-cards-container {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-self: center;
+
+            .home-feature-card,
+            .home-feature-card1,
+            .home-feature-card2 {
+                width: 100%;
+                align-self: center;
+            }
+            .home-feature-card1,
+            .home-feature-card2 {
+                margin-top: 1.2em;
+            }
+        }
+    }
+    .home-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        padding: 1em;
+
+        .home-stat,
+        .home-stat1,
+        .home-stat2,
+        .home-stat3 {
+            width: 100%;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+    }
+}
