@@ -1,5 +1,5 @@
 function solution(numbers){
-    numbers.sort((a, b) => a - b);
+    numbers.sort(function(a, b) {return a-b});
 
     return numbers
 }
