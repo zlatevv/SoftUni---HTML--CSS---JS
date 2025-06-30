@@ -1,5 +1,5 @@
 function solution(substring, string){
-    if (string.toLowerCase().includes(substring.toLowerCase())){
+    if (string.toLowerCase().split(" ").includes(substring.toLowerCase())){
         console.log(substring);
         
     }else {
