@@ -2,6 +2,7 @@ function solve() {
     const input = document.querySelector("#inputs textarea").value
     const bestRestaurantEL = document.querySelector("#bestRestaurant p")
     const workersEl = document.querySelector("#workers p")
+    workersEl.textContent = ''
     
     let restaurants = JSON.parse(input)
     let restaurantsWorkers = {}
