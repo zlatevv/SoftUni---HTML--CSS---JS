@@ -20,7 +20,7 @@ function getInfo() {
                 busesList.appendChild(liItem);
             }
         })
-        .catch(error => {
+        .catch(() => {
             stopName.textContent = 'Error';
         })
 }
