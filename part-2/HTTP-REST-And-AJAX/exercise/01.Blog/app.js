@@ -35,12 +35,12 @@ async function handleCommentsShowcasing(id){
     const result = await fetch(`http://localhost:3030/jsonstore/blog/comments`)
     const data = await result.json() 
 
-    const texts = Object.values(data)
+    Object.values(data)
         .filter(object => object.postId == id)
         .forEach(object => {
             const liEl = document.createElement("li")
             liEl.textContent = object.text
-            liEl.id = object.id
+            liEl.id = object.postId
             postComments.appendChild(liEl)
         })
 
