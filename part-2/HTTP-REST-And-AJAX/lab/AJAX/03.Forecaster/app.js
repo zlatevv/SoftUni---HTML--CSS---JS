@@ -103,6 +103,7 @@ async function handleUpcomingForecast(location) {
         forecastDataEl1.innerHTML = `${day.low}${weatherSymbols.Degrees}/${day.high}${weatherSymbols.Degrees}`
 
         const forecastDataEl2 = document.createElement("span")
+        forecastDataEl2.classList.add("forecast-data")
         forecastDataEl2.innerHTML = day.condition
 
         upcomingSpanEl.appendChild(symbolEl)
