@@ -3,6 +3,7 @@ const selectPostsEl = document.getElementById("posts")
 const btnViewPosts = document.getElementById("btnViewPost")
 const postBody = document.getElementById("post-body")
 const postComments = document.getElementById("post-comments")
+const postTitle = document.getElementById("post-title")
 
 function attachEvents() {
     btnLoadPosts.addEventListener("click", handleLoadingPosts)
@@ -26,6 +27,7 @@ async function handleViewingPosts(){
 
     for (const [id, values] of Object.entries(data)) {
         if (id == option){
+            postTitle.textContent = values.title
             postBody.textContent = values.body
             handleCommentsShowcasing(id)
         }

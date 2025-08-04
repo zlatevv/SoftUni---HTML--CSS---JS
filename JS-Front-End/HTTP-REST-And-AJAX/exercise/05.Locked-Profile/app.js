@@ -1,6 +1,8 @@
 function lockedProfile() {
     const main = document.getElementById("main")
 
+    let count = 1
+
     fetch("http://localhost:3030/jsonstore/advanced/profiles")
         .then(response => response.json())
         .then(allUsers => {
@@ -38,7 +40,7 @@ function lockedProfile() {
 
                 const usernameInput = document.createElement("input")
                 usernameInput.type = "text"
-                usernameInput.name = user.username
+                usernameInput.name = `user${count}Username`
                 usernameInput.value = "" 
                 usernameInput.disabled = true
                 usernameInput.readOnly = true
@@ -92,6 +94,8 @@ function lockedProfile() {
                 profileDiv.appendChild(button)
 
                 main.appendChild(profileDiv)
+
+                count++
             })
         })
     function handleShowingInfo(e){
