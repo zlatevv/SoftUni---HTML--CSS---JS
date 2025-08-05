@@ -7,7 +7,7 @@ function solve() {
 
     addBtn.addEventListener("click", handleAdding)
 
-    function handleAdding(){
+  function handleAdding(){
       const nameInput = document.getElementById("name")
       const phoneInput = document.getElementById("phone")
       const category = document.getElementById("category")
@@ -68,6 +68,7 @@ function solve() {
     liItem.appendChild(btnEl)
 
     contactList.appendChild(liItem)
+    checkList.innerHTML = ''
   }
   function handleEditting(e){
     const liItem = e.target.parentElement.parentElement
