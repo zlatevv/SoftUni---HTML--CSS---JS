@@ -11,7 +11,7 @@ const URL = "http://localhost:3030/jsonstore/records/"
 loadRecordsBtn.addEventListener("click", handleLoading)
 addRecordBtn.addEventListener("click", handelAdding)
 editRecordBtn.addEventListener("click", handleEditing)
-selectedRecord = null
+let selectedRecord = null
 
 async function handleLoading() {
     const result = await fetch(URL)
@@ -105,7 +105,7 @@ async function handleEditing() {
         headers: {
             "Content-Type":"application/json"
         },
-        body: JSON.stringify({ name, calories, steps})
+        body: JSON.stringify({ _id: selectedRecord, name, calories, steps})
     })
     await handleLoading()
     editRecordBtn.disabled = true
