@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Event Tracker</title>
+  </head>
+  <body>
+    <h1>Event Tracker</h1>
+    <main id="main">
+      <div id="main-container">
+        <div id="form-container">
+          <form class="event-content">
+            <label for="event">Event Name</label>
+            <input type="text" id="event" />
+            <label for="note">Short Note</label>
+            <input type="text" id="note" />
+            <label for="date">Event Date</label>
+            <input type="date" id="date" />
+
+            <button type="button" id="save">Save</button>
+          </form>
+        </div>
+      </div>
+      <div id="right-container">
+        <div id="upcoming">
+          <h2>Upcoming</h2>
+          <ul id="upcoming-list">
+            
+          </ul>
+        </div>
+        <div id="events">
+          <h2>Ended</h2>
+          <ul id="events-list">
+            
+          </ul>
+          <button class="btn delete">Delete</button>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
