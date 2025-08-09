@@ -93,11 +93,12 @@ async function handleAdding(e) {
         body: JSON.stringify({ name, quantity, date})
     })
 
-    await handleLoading()
-
     nameInput.value = ''
     quantityInput.value = ''
     dateInput.value = ''
+    
+    await handleLoading()
+
 }
 
 async function handleEditing(e) {

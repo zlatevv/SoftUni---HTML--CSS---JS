@@ -37,6 +37,7 @@ function solve(){
         article.appendChild(pDate)
 
         const buttonsDiv = document.createElement("div")
+        buttonsDiv.classList.add("buttons")
 
         const editBtn = document.createElement("button")
         editBtn.classList.add("btn", "edit")
